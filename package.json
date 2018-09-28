@@ -1,6 +1,6 @@
 {
   "name": "@ghasemkiani/exchangingapi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple client for querying exchanging.ir cryptocurrency prices",
   "repository": "github:ghasemkiani/exchangingapi",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "author": "Ghasem Kiani",
   "license": "MIT",
   "dependencies": {
-    "@ghasemkiani/commonbase": "https://gitlab.com/ghasemkiani/commonbase.git",
+    "@ghasemkiani/commonbase": "https://github.com/ghasemkiani/commonbase.git",
     "r2": "^2.0.0",
     "socks-proxy-agent": "^4.0.1",
     "xmldom": "^0.1.27",
