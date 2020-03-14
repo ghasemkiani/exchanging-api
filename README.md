@@ -1,4 +1,4 @@
-# exchangingapi
+# exchanging-api
 A simple client for querying exchanging.ir cryptocurrency prices
 
 **NB:** I am not affiliated with [exchanging.ir](https://exchanging.ir/). This program is not endorsed or supported by exchanging.ir. Please check their Terms of Service before using this program.
@@ -6,14 +6,14 @@ A simple client for querying exchanging.ir cryptocurrency prices
 ## Install
 You can use this command to add this package to your NodeJS project:
 ```
-npm install github:ghasemkiani/exchangingapi
+npm install github:ghasemkiani/exchanging-api
 ```
 
 ## How to use
 This is an example usage of this package:
 ```javascript
 (async function () {
-  const {ExchangingAPI} = require("@ghasemkiani/exchangingapi");
+  const {ExchangingAPI} = require("@ghasemkiani/exchanging-api");
   
   let api = new ExchangingAPI();
   await api.toUpdate();
