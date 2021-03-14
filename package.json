@@ -16,7 +16,7 @@
     "@ghasemkiani/commonbase": "github:ghasemkiani/commonbase",
     "r2": "^2.0.0",
     "socks-proxy-agent": "^4.0.1",
-    "xmldom": "^0.1.27",
+    "xmldom": "^0.5.0",
     "xpath": "0.0.27"
   }
 }
