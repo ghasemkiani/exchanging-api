@@ -5,7 +5,7 @@ const {DOMParser} = require("xmldom");
 
 const {Base} = require("@ghasemkiani/commonbase/base");
 const {cutil} = require("@ghasemkiani/commonbase/cutil");
-const {fetcher} = require("@ghasemkiani/commonbase/web/client");
+const {fetcher} = require("@ghasemkiani/net-utils/web/client");
 
 class ExchangingAPI extends cutil.mixin(Base, fetcher) {
 	// _url
@@ -91,7 +91,8 @@ class ExchangingAPI extends cutil.mixin(Base, fetcher) {
 		this._cfg = cfg;
 	}
 	async toUpdate() {
-		let text = await this.toFetch(this.url).text;
+		let rsp = await this.toFetch(this.url);
+		let text = await rsp.text();
 		let document = new DOMParser().parseFromString(text);
 		this.currencies = {};
 		this.cfg.forEach(item => {
