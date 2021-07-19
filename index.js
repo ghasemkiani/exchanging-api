@@ -1,10 +1,10 @@
-//	@ghasemkiani/exchangingapi
+//	@ghasemkiani/exchanging-api
 
 const xpath = require("xpath");
 const {DOMParser} = require("xmldom");
 
-const {Base} = require("@ghasemkiani/commonbase/base");
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {Obj: Base} = require("@ghasemkiani/base/obj");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {fetcher} = require("@ghasemkiani/net-utils/web/client");
 
 class ExchangingAPI extends cutil.mixin(Base, fetcher) {

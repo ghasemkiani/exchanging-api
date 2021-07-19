@@ -13,7 +13,7 @@
   "author": "Ghasem Kiani",
   "license": "MIT",
   "dependencies": {
-    "@ghasemkiani/commonbase": "github:ghasemkiani/commonbase",
+    "@ghasemkiani/base": "github:ghasemkiani/base",
     "@ghasemkiani/net-utils": "github:ghasemkiani/net-utils",
     "xmldom": "^0.5.0",
     "xpath": "0.0.27"
