@@ -3,8 +3,8 @@
 const xpath = require("xpath");
 const {DOMParser} = require("xmldom");
 
-const {Obj: Base} = require("@ghasemkiani/base/obj");
-const {cutil} = require("@ghasemkiani/base/cutil");
+import {Obj as Base} from "@ghasemkiani/base";
+import {cutil} from "@ghasemkiani/base";
 const {fetcher} = require("@ghasemkiani/net-utils/web/client");
 
 class ExchangingAPI extends cutil.mixin(Base, fetcher) {
@@ -106,6 +106,6 @@ class ExchangingAPI extends cutil.mixin(Base, fetcher) {
 	}
 }
 
-module.exports = {
+export {
 	ExchangingAPI,
 };
